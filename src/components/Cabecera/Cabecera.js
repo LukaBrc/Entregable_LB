@@ -1,13 +1,11 @@
-// PROPS: Cabecera recibe de su padre la cantidad que va a mostrar dentro del span correpondiente
-import React, {useState} from 'react'
+import React from 'react'
 
-export default function Cabecera({}) {
-  const [count, setCount] = useState(0);
+export default function Cabecera({cantCarrito}) {
   
   return (
     <header>
         <h1>Carrito de Compras LB Store</h1>
-        <p>Cantidad de productos: <span>{count}</span></p>
+        <p>Cantidad de productos: <span>{cantCarrito}</span></p>
     </header>
   );
 }
