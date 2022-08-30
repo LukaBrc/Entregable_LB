@@ -7,14 +7,13 @@
 import React from "react";
 import Cabecera from "./components/Cabecera/Cabecera"
 import Listado from "./components/Listado/Listado"
-import useGetData from "./hooks/useGetData";
+import data from "./db/data.json"
 
 function App() {
-  const [data] = useGetData("data.json");
   return (
     <div className="App">
       <Cabecera />
-      <Listado />
+      <Listado productos={data} />
     </div>
   );
 }

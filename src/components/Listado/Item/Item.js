@@ -8,13 +8,13 @@
 //    h5 > span    (este span debe mostrar la cantidad si es mayor a 0 "agotado" si llega a 0)
 //    button       (este boton debe permitir comprar, pero si la cantidad es menor a 0 debe estar deshabilitado y decir "Sin stock")
 import React from "react"
-export default function Item() {
+
+export default function Item({publicacion}) {
 
   return (
     <div className='producto'>
-      <img alt="Product"/>
-      <h3></h3>
-      <p></p>
+      <h3>{publicacion.producto.nombre}</h3>
+      <p>{publicacion.producto.descripcion}</p>
       <h5>En Stock: <span></span></h5>
       <button>COMPRAR</button>
     </div>

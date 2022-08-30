@@ -7,10 +7,11 @@
 import React from 'react'
 import Item from './Item/Item'
 
-export default function Listado() {
+export default function Listado({ productos }) {
   return (
     <div className='container'>
-      <Item />
+      {productos.map((dataPublicacion) => 
+      <Item key={dataPublicacion.id} publicacion={dataPublicacion} />)}
     </div>
   )
 }
