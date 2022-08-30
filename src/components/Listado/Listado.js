@@ -11,8 +11,6 @@ export default function Listado() {
   return (
     <div className='container'>
       <Item />
-      <Item />
-      <Item />
     </div>
   )
 }
