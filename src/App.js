@@ -10,6 +10,7 @@ import Listado from "./components/Listado/Listado"
 import data from "./db/data.json"
 
 function App() {
+
   return (
     <div className="App">
       <Cabecera />
